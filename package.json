@@ -2,7 +2,7 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "hhtp://csalberg.github.io/website2.0",
+  "homepage": "https://csalberg.github.io/website-2.0/",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
