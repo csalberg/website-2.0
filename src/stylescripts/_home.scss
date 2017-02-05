@@ -1,0 +1,43 @@
+.home {
+  padding-top: 5em;
+
+  .description {
+    margin: 2em auto 0;
+    width: 400px;
+    text-align: center;
+
+    @media (max-width: 520px) {
+      width: inherit;
+      font-size: 1.5em;
+      padding: 0 1em;
+    }
+  }
+
+  .skyline {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+
+    @media (max-width: 860px) {
+      height: 15em;
+    }
+
+    @media (max-width: 520px) {
+      height: 20em;
+      left: -150px;
+    }
+  }
+
+  .name {
+    margin: 0 auto;
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .greeting {
+    margin: 0 auto;
+    font-size: 4em;
+    text-align: center;
+  }
+}
