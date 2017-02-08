@@ -12,10 +12,15 @@ let links = [
 		to: '/about',
 		text: 'About Me',
 	},
+	{
+		id: '2',
+		to: '/work',
+		text: 'Work',
+	},
 ]
 
 const App = ({children}) => (
-	<div>
+	<div className={"app app-".concat(children.props.route.path)}>
 		<Header { ... { links } }/>
 		{children}
 	</div>

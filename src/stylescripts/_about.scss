@@ -1,16 +1,45 @@
-.construction {
-  margin: 0 auto;
-  font-size: 3em;
-  text-align: center;
-}
+@import 'colors';
+@import 'font';
 
-.constructionIcon {
-  margin: 0 auto 1rem;
-  font-size: 10em;
-  width: 1em;
-  display: block;
+.app-about {
+  background-color: $white;
+  color: $dark;
 }
 
 .about {
-  padding-top: 4rem;
+
+  .section {
+  	font-family: $poiret;
+  }
+
+  .facts {
+  	text-align: center;
+  	background: rgba(36, 57, 71, .5);
+  	padding: 1rem 9em;
+  	color: $light;
+
+  	.section {
+  		font-size: 2rem;
+  		padding-bottom: 1rem;
+  	}
+
+    @media (max-width: 600px) {
+      padding: 1rem;
+    }
+  }
+
+  .passions {
+  	padding: 1rem 1rem 0;
+	  
+  	.section {
+  		color: $accent;
+  		font-size: 3rem;
+  		text-align: center;
+  		padding-bottom: 1rem;
+  	}
+
+  	.passions-text {
+      text-indent: 2rem;
+  	 }
+   }
 }

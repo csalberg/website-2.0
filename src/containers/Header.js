@@ -19,8 +19,11 @@ const enhance = compose(
 
 export const Header = enhance(({ maybeRender, toggleOn, toggleOff, links }) =>
         <div className="header">
-            <img className="avatar" src={avatar} />
-            <MediaQuery maxWidth={1024}>
+            <Link to="/" className="av-name">
+                <img className="avatar" src={avatar} />
+                <span className="name">Chelsey Salberg</span>
+            </Link>
+            <MediaQuery maxWidth={768}>
                 {matches => matches ? (
                     <div>
                         <i className="menu material-icons" onClick={ toggleOn }>menu</i>

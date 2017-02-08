@@ -1,12 +1,22 @@
+@import 'colors';
+@import 'font';
+
+.app-home {
+  background-color: $primary;
+}
+
 .home {
-  padding-top: 2em;
+  padding-top: 2rem;
 
   .description {
-    margin: 2em auto 0;
-    width: 400px;
+    font-size: 1.5rem;
+    margin: 2rem auto 0;
+    width: 600px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 
-    @media (max-width: 520px) {
+    @media (max-width: 600px) {
       width: inherit;
       padding: 0 1em;
     }
@@ -15,38 +25,42 @@
   .skyline {
     position: fixed;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
     left: 0;
 
     @media (max-width: 860px) {
-      height: 15em;
+      height: 15rem;
     }
 
     @media (max-width: 520px) {
-      height: 15em;
+      height: 15rem;
       left: -180px;
     }
   }
 
-  .name {
+  .greeting-name {
     margin: 0 auto;
-    font-size: 5em;
+    font-size: 5rem;
     text-align: center;
-    font-family: 'Poiret One', cursive;
+    font-family: $poiret;
+    position: relative;
+    z-index: 1;
 
     @media (max-width: 520px) {
-      font-size: 3em;
+      font-size: 3rem;
     }
   }
 
   .greeting {
     margin: 0 auto;
-    font-size: 4em;
+    font-size: 4rem;
     text-align: center;
     font-family: 'Poiret One', cursive;
+    position: relative;
+    z-index: 1;
 
     @media (max-width: 520px) {
-      font-size: 2em;
+      font-size: 2rem;
     }
   }
 }
