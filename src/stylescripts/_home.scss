@@ -8,6 +8,11 @@
 .home {
   padding-top: 2rem;
 
+  .bg-opacity {
+    background: rgba(130, 206, 194, 0.8);
+    border-radius: 1.5rem;
+  }
+
   .description {
     font-size: 1.5rem;
     margin: 2rem auto 0;
@@ -34,7 +39,7 @@
 
     @media (max-width: 520px) {
       height: 15rem;
-      left: -180px;
+      left: -130px;
     }
   }
 
