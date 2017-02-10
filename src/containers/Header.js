@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import MediaQuery from 'react-responsive';
 import { compose, withState, withHandlers  } from 'recompose';
 import Menu from '../components/Menu';
+import Footer from './Footer';
 import { Link } from 'react-router';
 
 import avatar from '../images/avatar.svg';
@@ -17,6 +18,8 @@ const enhance = compose(
     })
 )
 
+const location = "menu";
+
 export const Header = enhance(({ maybeRender, toggleOn, toggleOff, links }) =>
         <div className="header">
             <Link to="/" className="av-name">
@@ -26,15 +29,16 @@ export const Header = enhance(({ maybeRender, toggleOn, toggleOff, links }) =>
             <MediaQuery maxWidth={768}>
                 {matches => matches ? (
                     <div>
-                        <i className="menu material-icons" onClick={ toggleOn }>menu</i>
+                        <i className="menu fa fa-bars" onClick={ toggleOn }/>
                         { maybeRender ?
                             <div>
                                 <div className="overlay" onClick={ toggleOff }/>
                                 <div className="sidemenu">
-                                    <i className="menu material-icons" onClick={ toggleOff }>close</i>
+                                    <i className="menu fa fa-times" onClick={ toggleOff }/>
                                     <ul>
                                         {links.map(link => <li className="list-item"key={ link.id }><Link to={ link.to } onClick={ toggleOff }> { link.text } </Link></li>)}
                                     </ul>
+                                    <Footer { ... { location }}/>
                                 </div>
                             </div>
                             : null}

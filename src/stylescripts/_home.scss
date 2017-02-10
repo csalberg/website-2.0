@@ -3,6 +3,7 @@
 
 .app-home {
   background-color: $primary;
+  height: calc(100vh - 4rem)
 }
 
 .home {
@@ -29,17 +30,21 @@
 
   .skyline {
     position: fixed;
-    bottom: 0;
+    bottom: 3.98rem;
     z-index: 0;
     left: 0;
 
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
+      bottom: 0;
+    }
+
+    @media (max-width: 1020px) {
       height: 15rem;
     }
 
     @media (max-width: 520px) {
       height: 15rem;
-      left: -130px;
+      left: -100px;
     }
   }
 

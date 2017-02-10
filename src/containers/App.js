@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react';
+import MediaQuery from 'react-responsive';
 import Header from './Header';
+import Footer from './Footer';
 
 let links = [
 	{
@@ -19,10 +21,15 @@ let links = [
 	},
 ]
 
+const location = "app";
+
 const App = ({children}) => (
 	<div className={"app app-".concat(children.props.route.path)}>
 		<Header { ... { links } }/>
 		{children}
+		<MediaQuery minWidth={768}>
+				<Footer { ... { location }}/>
+		</MediaQuery>
 	</div>
 );
 

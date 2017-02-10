@@ -4,7 +4,7 @@ I also used the resources bellow and would like to give proper  attribution.
 
 - [Quicksand google font](https://fonts.google.com/specimen/Quicksand)
 - [Poiret google font](https://fonts.google.com/specimen/Poiret+One)
-- [Material Design Icons](https://material.io/icons/)
+- [Font Awesome Icons](http://fontawesome.io/)
 - [Avatar Vector Image](http://www.freepik.com/free-vector/funny-people-avatars_844759.htm)
 - [Seattle Skyline Vector Image](http://www.freepik.com/free-vector/seattle-skyline-design_896046.htm)
 
