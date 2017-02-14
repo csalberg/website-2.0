@@ -1,6 +1,28 @@
 @import 'colors';
+@import 'font';
 
 .app-work {
   background-color: $white;
   color: $dark;
+}
+
+.work {
+
+	.description {
+		font-family: $poiret;
+		font-size: 2rem;
+		text-align: center;
+  		background: rgba(36, 57, 71, .5);
+  		padding: 1rem;
+  		color: $light;
+
+		.work-link {
+			text-decoration: none; 
+			color: $light;
+
+			&:hover {
+				color: $dark;
+	  		}
+		}
+	}
 }

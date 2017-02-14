@@ -1,0 +1,39 @@
+@import 'colors';
+
+.card-container {
+	margin: 2rem;
+	width: calc(100vw / 3 - 4.4rem);
+	display: inline-block;
+
+	 @media (max-width: 1248px) {
+      width: calc(100vw / 2 - 4.6rem);
+    }
+
+    @media (max-width: 768px) {
+      width: calc(100vw - 5.2rem);
+    }
+}
+
+.card {
+	color: $dark;
+	width: 100%;
+	border: 0.0625rem solid $light;
+
+	.card-image {
+		width: inherit;
+	}
+
+	.card-text {
+		padding: 1rem;
+		background: $light;
+	}
+
+	.card-link {
+		text-decoration: none; 
+		color: $dark;
+
+		&:hover {
+			color: $accent;
+	  	}
+	}
+}
