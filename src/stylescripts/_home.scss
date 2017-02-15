@@ -3,7 +3,11 @@
 
 .app-home {
   background-color: $primary;
-  height: calc(100vh - 4rem)
+  height: calc(100vh - 4rem);
+
+  @media (max-width: 520px) {
+      height: calc(100vh);
+    }
 }
 
 .home {
@@ -43,7 +47,7 @@
     }
 
     @media (max-width: 520px) {
-      height: 15rem;
+      height: 13rem;
       left: -100px;
     }
   }

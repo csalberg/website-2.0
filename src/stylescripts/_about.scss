@@ -12,34 +12,44 @@
   	font-family: $poiret;
   }
 
+  .facts-section {
+    background: rgba(36, 57, 71, .5);
+  }
+
   .facts {
-  	text-align: center;
-  	background: rgba(36, 57, 71, .5);
-  	padding: 1rem 9em;
+  	padding: 1.5rem;
   	color: $light;
+
+    .facts-text {
+      line-height: 2rem;
+    }
 
   	.section {
   		font-size: 2rem;
-  		padding-bottom: 1rem;
+  		padding-bottom: .75rem;
   	}
 
-    @media (max-width: 600px) {
-      padding: 1rem;
+    @media (min-width: 780px){
+      width: 700px;
+      margin: 0 auto;
     }
   }
 
   .passions {
-  	padding: 1rem 1rem 0;
-	  
+  	padding: 1.5rem;
+
+    @media (min-width: 780px){
+      width: 700px;
+      margin: 0 auto;
+    }
+	 
   	.section {
   		color: $accent;
   		font-size: 3rem;
-  		text-align: center;
-  		padding-bottom: 1rem;
   	}
 
   	.passions-text {
-      text-indent: 2rem;
+      line-height: 2rem;
   	 }
    }
 }

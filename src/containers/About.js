@@ -4,18 +4,20 @@ import '../stylescripts/_about.scss';
 
 export const About = () => (
 	<div className="about">
-		<div className="facts">
-			<div className="section">A few fun facts about myself</div>
-			<div>
-				I play on a co-ed soccer team, 
-				I have pair of cats named Luke and Leia, 
-				I love playing video games, 
-				I built my own gaming PC and painted it to look like Yoshi, 
-				I am allergic to bananas
+		<div className="facts-section">
+			<div className="facts">
+				<div className="section">Fun Facts</div>
+				<div className="facts-text">
+					I play on a co-ed soccer team.  
+					I have pair of cats named Luke and Leia.  
+					I love playing video games.  
+					I built my own gaming PC and painted it to look like Yoshi.  
+					I am allergic to bananas.
+				</div>
 			</div>
 		</div>
 		<div className="passions"> 
-			<div className="section">Understanding my passions</div>
+			<div className="section">My Journey</div>
 			<p className="passions-text"> 
 				When I was 10, I dreamed of being a veterinarian. 
 				I loved animals and figured it was the perfect job ... right up until 
